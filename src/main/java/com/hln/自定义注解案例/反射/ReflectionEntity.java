@@ -1,0 +1,53 @@
+package com.hln.自定义注解案例.反射;
+
+/**
+ * 实体类entity
+ */
+public class ReflectionEntity {
+
+    private String name;
+    private int id;
+    private int age;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public ReflectionEntity(String name, int id, int age) {
+        this.name = name;
+        this.id = id;
+        this.age = age;
+    }
+
+    public ReflectionEntity() {
+    }
+
+    @Override
+    public String toString() {
+        return "ReflectionEntity{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", age=" + age +
+                '}';
+    }
+}
